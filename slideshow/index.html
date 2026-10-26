@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Um slideshow responsivo com imagens inspiradas no universo Matrix."
+    />
+    <title>Galeria Matrix — Slideshow</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="gallery">
+      <header class="gallery__header">
+        <span class="gallery__eyebrow">Galeria digital</span>
+        <h1>Além do código<span>.</span></h1>
+      </header>
+
+      <section class="slideshow" aria-label="Slideshow de imagens">
+        <div class="slideshow__stage">
+          <button
+            class="slideshow__arrow slideshow__arrow--previous"
+            type="button"
+            aria-label="Ver imagem anterior"
+          >
+            <span aria-hidden="true">&larr;</span>
+          </button>
+
+          <figure class="slideshow__figure">
+            <img class="slideshow__image" src="" alt="" />
+            <figcaption class="slideshow__caption" aria-live="polite"></figcaption>
+          </figure>
+
+          <button
+            class="slideshow__arrow slideshow__arrow--next"
+            type="button"
+            aria-label="Ver próxima imagem"
+          >
+            <span aria-hidden="true">&rarr;</span>
+          </button>
+        </div>
+
+        <div class="slideshow__footer">
+          <span class="slideshow__counter" aria-live="polite"></span>
+          <div class="slideshow__dots" aria-label="Escolher imagem"></div>
+          <span class="slideshow__hint">Use as setas do teclado</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
